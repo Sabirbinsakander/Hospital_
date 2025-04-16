@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="https://cdn.pixabay.com/photo/2024/05/19/09/37/ai-generated-8772169_640.png" alt="Profile Picture" class="profile-pic">
+                <h2>John Doe</h2>
+                <p>Patient ID: 123456</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#overview" class="active">Overview</a></li>
+                    <li><a href="/hospital/Html/appointments.html">Appointments</a></li>
+                    <li><a href="/hospital/Html/medical-records.html">Medical Records</a></li>
+                    <li><a href="/hospital/Html/prascription.html">Prescriptions</a></li>
+                    <li><a href="/hospital/Html/billing.html">Billing</a></li>
+                    <li><a href="/hospital/Html/setting.html">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="logout">
+                <a href="/logout">Log Out</a>
+            </div>
+        </aside>
+    
+        <main class="content">
+            <header>
+                <h1>Welcome, John Doe</h1>
+                <p>Your health at a glance.</p>
+            </header>
+
+            <section id="overview" class="dashboard-section">
+                <h2>Overview</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Upcoming Appointments</h3>
+                        <p>You have 2 upcoming appointments.</p>
+                        <a href="#appointments">View Details</a>
+                    </div>
+                    <div class="card">
+                        <h3>Recent Test Results</h3>
+                        <p>Your recent blood test shows all normal values.</p>
+                        <a href="#medical-records">View Records</a>
+                    </div>
+                    <div class="card">
+                        <h3>Billing Information</h3>
+                        <p>You have an outstanding balance of $200.</p>
+                        <a href="#billing">Pay Now</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="appointments" class="dashboard-section">
+                <h2>Appointments</h2>
+                <div class="appointment-list">
+                    <div class="appointment">
+                        <h3>General Check-up</h3>
+                        <p>Date: September 5, 2024</p>
+                        <p>Time: 10:00 AM</p>
+                        <p>Doctor: Dr. Sarah Lee</p>
+                    </div>
+                    <div class="appointment">
+                        <h3>Dental Cleaning</h3>
+                        <p>Date: September 15, 2024</p>
+                        <p>Time: 2:00 PM</p>
+                        <p>Doctor: Dr. Michael Brown</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="medical-records" class="dashboard-section">
+                <h2>Medical Records</h2>
+                <p>Your latest medical records are available for review.</p>
+                <a href="#medical-records">View All Records</a>
+            </section>
+
+            <section id="prescriptions" class="dashboard-section">
+                <h2>Prescriptions</h2>
+                <p>Your current prescriptions are up to date.</p>
+                <a href="#prescriptions">View All Prescriptions</a>
+            </section>
+
+            <section id="billing" class="dashboard-section">
+                <h2>Billing</h2>
+                <p>Manage your billing information and payment methods.</p>
+                <a href="#billing">View Billing Details</a>
+            </section>
+
+            <section id="settings" class="dashboard-section">
+                <h2>Settings</h2>
+                <p>Update your personal information and preferences.</p>
+                <a href="#settings">Go to Settings</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

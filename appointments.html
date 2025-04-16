@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule an Appointment</title>
+    <link rel="stylesheet" href="./css/appointment.css">
+</head>
+<body>
+    <div class="appointment-container">
+        <header>
+            <h1>Schedule an Appointment</h1>
+            <p>Select a doctor, choose a date and time, and provide your details.</p>
+        </header>
+
+        <main>
+            <form action="/hospital/Html/" method="POST">
+                <div class="form-group">
+                    <label for="doctor">Choose a Doctor</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="">Select a Doctor</option>
+                        <option value="dr_sarah_lee">Dr. Sarah Lee - General Physician</option>
+                        <option value="dr_michael_brown">Dr. Michael Brown - Dentist</option>
+                        <option value="dr_jane_doe">Dr. Jane Doe - Cardiologist</option>
+                        <option value="dr_john_smith">Dr. John Smith - Dermatologist</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Choose a Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Choose a Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for Appointment</label>
+                    <textarea id="reason" name="reason" placeholder="Describe the reason for your visit" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Information</label>
+                    <input type="text" id="contact" name="contact" placeholder="Your phone number or email" required>
+                </div>
+
+                <button type="submit" class="submit-button">Schedule Appointment</button>
+            </form>
+        </main>
+    </div>
+    <script src="/hospital/js/appointments.js"></script>
+</body>
+</html>

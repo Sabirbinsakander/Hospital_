@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/maindashboard.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header>
+            <nav class="sidebar">
+                <h1>Dashboard</h1>
+                <p>Welcome back! Manage your information and monitor key metrics.</p>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#patients">Patient List</a></li>
+                    <li><a href="#appointments">Appointments</a></li>
+                    <li><a href="#medical-records">Medical Records</a></li>
+                    <li><a href="#prescriptions">Prescriptions</a></li>
+                    <li><a href="#billing">Billing</a></li>
+                </ul>
+            </nav>
+        </header>
+<!-- header ends -->
+ <main>
+
+     <section id="overview">
+         <h2>Overview</h2>
+         <div class="overview-cards">
+             <div class="card">
+                 <div class="card-icon">👥</div>
+                 <h3>Total Patients</h3>
+                 <p>123</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📅</div>
+                    <h3>Upcoming Appointments</h3>
+                    <p>15</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📝</div>
+                    <h3>Recent Consultations</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="patients">
+            <h2>Patient List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Last Appointment</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>32</td>
+                            <td>Female</td>
+                            <td>August 20, 2024</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>45</td>
+                            <td>Male</td>
+                            <td>July 15, 2024</td>
+                            <td>Inactive</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>29</td>
+                            <td>Female</td>
+                            <td>August 25, 2024</td>
+                            <td>Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="appointments">
+                <h2>Appointments</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>September 1, 2024</td>
+                            <td>10:00 AM</td>
+                            <td>Scheduled</td>
+                        </tr>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>September 5, 2024</td>
+                            <td>2:00 PM</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>September 8, 2024</td>
+                            <td>1:00 PM</td>
+                            <td>Scheduled</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="medical-records">
+                <h2>Medical Records</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Record Date</th>
+                            <th>Description</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>August 20, 2024</td>
+                            <td>Consultation</td>
+                            <td>Patient reports back pain.</td>
+                        </tr>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>July 15, 2024</td>
+                            <td>Lab Test</td>
+                            <td>Blood test results normal.</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>August 25, 2024</td>
+                            <td>Consultation</td>
+                            <td>Follow-up on previous treatment.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="prescriptions">
+                <h2>Prescriptions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Medication</th>
+                            <th>Dosage</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>Ibuprofen</td>
+                            <td>200 mg</td>
+                            <td>August 20, 2024</td>
+                            <td>September 20, 2024</td>
+                        </tr>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>Lisinopril</td>
+                            <td>10 mg</td>
+                            <td>July 15, 2024</td>
+                            <td>Ongoing</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>Amoxicillin</td>
+                            <td>500 mg</td>
+                            <td>August 25, 2024</td>
+                            <td>September 25, 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <section id="billing">
+                <h2>Billing</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>August 20, 2024</td>
+                            <td>Consultation</td>
+                            <td>$100.00</td>
+                            <td>Paid</td>
+                        </tr>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>July 15, 2024</td>
+                            <td>Lab Test</td>
+                            <td>$150.00</td>
+                            <td>Unpaid</td>
+                        </tr>
+                        <tr>
+                            <td>Alice Johnson</td>
+                            <td>August 25, 2024</td>
+                            <td>Consultation</td>
+                            <td>$100.00</td>
+                            <td>Paid</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+        </div>
+    </main>
+        <script src="maindashboard.js"></script>
+    </body>
+    </html>
+    
+    

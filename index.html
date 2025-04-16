@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Login</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <header>
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/004/493/181/small/hospital-building-for-healthcare-background-illustration-with-ambulance-car-doctor-patient-nurses-and-medical-clinic-exterior-free-vector.jpg" alt="Hospital Logo" class="logo">
+            <h1>Hospital Management System</h1>
+        </header>
+
+        <main>
+            <form action="/login" method="POST">
+                <div class="input-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+
+                <button type="submit" class="login-button">Log In</button>
+                <a href="Dashboard.html" class="forgot-password">Forgot Password?</a>
+            </form>
+        </main>
+
+        <footer>
+            <p>Need help? <a href="/contact-support">Contact Support</a></p>
+            <p><a href="/terms">Terms and Conditions</a> | <a href="/privacy">Privacy Policy</a></p>
+        </footer>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
